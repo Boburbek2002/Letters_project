@@ -16,6 +16,7 @@
   height: 600px;
   background: #fff;
   border-radius: 20px;
+  box-shadow: 0 0 25px #000000d1;
 }
 .MyModal.active {
   display: flex;
@@ -31,4 +32,27 @@
   border: 0;
   border-radius: 100%;
   background: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  .ModalDiv {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .ModalDiv {
+    width: 100vh;
+    min-height: 400px;
+    height: 80vh;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .ModalDiv {
+    width: 100vh;
+    min-height: 400px;
+    height: 90vh;
+  }
 }

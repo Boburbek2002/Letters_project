@@ -4,7 +4,6 @@
 
 
 body {
-  height: 100vh;
   background: url(../public/Imgs/maxresdefault.jpg) no-repeat center top -40px;
   background-size: cover;
 }
@@ -26,7 +25,7 @@ body {
 
 .container .row {
   margin-top: -20px;
-  height: 650px;
+  /* height: 650px; */
   border-radius: 15px;
   transition: all .3s;
 }
@@ -43,8 +42,6 @@ body {
 .container .row .col-4 div:hover {
   transform:scale(1.2);
   box-shadow: 0 0 25px #0000ff61;
-  border-radius: 100%;
-
 }
 
 .container .row .col-4:first-child {
@@ -99,7 +96,7 @@ body {
   color: #FCBF0B;
 }
 .container .row .col-4:nth-child(18) {
-  color: #BF81B2;
+  color: #bb4ba3;
 }
 .container .row .col-4:nth-child(19) {
   color: #DA0012;
@@ -134,17 +131,12 @@ body {
 .container .row .col-4:nth-child(29) {
   color: #2d0054;
 }
-.container .row .col-4:last-child {
-  color: #612C8A;
-}
 .letters {
   display: flex;
   justify-content: space-between;
-  
 }
-
 .ModalDiv-div {
-  height: 300px !important;
+  height: 300px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -156,15 +148,135 @@ body {
   margin-bottom: 0;
 }
 .modalParag {
-  margin-top: -60px;
+  margin-top: 20px;
 }
 
 .modalParagText {
   font-size: 18px;
   margin-top: 0;
+  color: brown;
 }
 .modal-letter {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1281px) {
+  body {
+    background: url(../public/Imgs/maxresdefault.jpg) no-repeat center top 0;
+    background-size: cover;
+  }
+  .container h1 { 
+    margin: 20px 0 20px 0;
+  }
+  .modalParag {
+    margin-top: 30px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background: url(../public/Imgs/maxresdefault.jpg) no-repeat center top;
+    background-size: cover;
+  }
+  .container {
+    max-width: 900px !important;
+  }
+  .container h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  .container .row {
+    margin-top: 0px;
+    padding: 0 20px 0 20px;
+  }
+  .container .row .col-4 div {
+    font-size: 58px;
+  } 
+  .modalParag {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 930px) {
+  body {
+    background: url(../public/Imgs/mobileBg.jpg) no-repeat center bottom;
+    background-size: cover;
+  }
+  .container h1 {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    background: url(../public/Imgs/mobileBg.jpg) no-repeat center bottom;
+    background-size: cover;
+  }
+  .container .row {
+    margin-top: 0px;
+  }
+  .container .row {
+    margin-top: 0px;
+    padding: 0 20px 150px 20px;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    /* background: url(../public/Imgs/maxresdefault.jpg) no-repeat center top 0; */
+  }
+  .container h1 {
+    font-size: 35px;
+    margin: 20px 0 20px 0;
+    
+  }
+  .container .row {
+    margin-top: 0px;
+    padding: 0 20px 150px 20px;
+  }
+  .container .row .col-4 div {
+    font-size: 45px;
+  } 
+  .ModalDiv-div {
+    height: 270px;
+    
+  }
+  .ModalDiv-div img {
+    height: 230px;
+  }
+  
+}
+
+@media screen and (max-width: 376px) {
+  .container h1 {
+    font-size: 35px;
+    margin: 20px 0 20px 0;
+  }
+  .container .row {
+    margin-top: 0px;
+  }
+  .container .row .col-4 div {
+    font-size: 45px;
+  }
+  .ModalDiv-div {
+    height: 250px;
+  }
+  .ModalDiv-div img {
+    height: 200px;
+  }
+  .modalParag {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container h1 {
+    font-size: 28px;
+    margin: 20px 0 20px 0;
+  }
+  .container .row .col-4 div {
+    font-size: 30px;
+  }
+}

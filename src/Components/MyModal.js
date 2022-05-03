@@ -24,16 +24,22 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
           &times;
         </button>
         </div>
-        <div className='row border-top rounded-0 pt-3'>
+        <div className='row border-top rounded-0 p-0 pt-3 '>
           
           <div className='col-sm-6 col-6 ModalDiv-div'>
             <img src={letterApi[index].url1} alt="Image" className='w-100 modalImg' />
-            <h3>{letterApi[index].imgName1}</h3>
+            <div className='d-flex justify-content-between'>
+              <h3 className='mt-1'>{letterApi[index].imgName1}</h3>
+              <h3 className='mt-1 flaversFont'>{letterApi[index].imgName1}</h3>
+            </div>
           </div>
           <div className='col-sm-6 col-6 border-start ModalDiv-div'>
             
             <img src={letterApi[index].url2} alt="Image" className='w-100 modalImg' />
-            <h3>{letterApi[index].imgName2}</h3>
+            <div className='d-flex justify-content-between'>
+              <h3 className='mt-1'>{letterApi[index].imgName2}</h3>
+              <h3 className='mt-1 flaversFont'>{letterApi[index].imgName2}</h3>
+            </div>
             
           </div>
           <div className='col-md-12 modalParag'>

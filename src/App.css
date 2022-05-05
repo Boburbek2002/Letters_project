@@ -136,7 +136,7 @@ body {
   justify-content: space-between;
 }
 .ModalDiv-div {
-  height: 300px;
+  height: 340px;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -232,9 +232,6 @@ body {
 }
 
 @media screen and (max-width: 460px) {
-  body {
-    /* background: url(../public/Imgs/maxresdefault.jpg) no-repeat center top 0; */
-  }
   .container h1 {
     font-size: 35px;
     margin: 20px 0 20px 0;

@@ -28,7 +28,7 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
           
           <div className='col-sm-6 col-6 ModalDiv-div'>
             <img src={letterApi[index].url1} alt="Image" className='w-100 modalImg' />
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex justify-content-between flex-wrap'>
               <h3 className='mt-1'>{letterApi[index].imgName1}</h3>
               <h3 className='mt-1 flaversFont'>{letterApi[index].imgName1}</h3>
             </div>
@@ -36,7 +36,7 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
           <div className='col-sm-6 col-6 border-start ModalDiv-div'>
             
             <img src={letterApi[index].url2} alt="Image" className='w-100 modalImg' />
-            <div className='d-flex justify-content-between'>
+            <div className='d-flex justify-content-between flex-wrap'>
               <h3 className='mt-1'>{letterApi[index].imgName2}</h3>
               <h3 className='mt-1 flaversFont'>{letterApi[index].imgName2}</h3>
             </div>

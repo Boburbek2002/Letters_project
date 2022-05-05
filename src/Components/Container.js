@@ -269,7 +269,7 @@ const Container = () => {
     },
   ]); 
 
-  const [letters, setLetters] = useState(['Aa', 'Bb', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Oo', 'Pp', 'Qq', 'Rr', 'Ss', 'Tt', 'Uu', 'Vv', 'Xx', 'Yy', 'Zz', "O'o'", "G'g'", 'Sh', 'Ch', 'Ng']);
+  const [letters, setLetters] = useState(['Aa', 'Bb', 'Dd', 'Ee', 'Ff', 'Gg', 'Hh', 'Ii', 'Jj', 'Kk', 'Ll', 'Mm', 'Nn', 'Oo', 'Pp', 'Qq', 'Rr', 'Ss', 'Tt', 'Uu', 'Vv', 'Xx', 'Yy', 'Zz', "O’o’", "G’g’", 'Sh', 'Ch', 'Ng']);
   const [modal, setModal] = useState(false);
   const [index, setIndex] = useState(0);
 

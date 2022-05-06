@@ -19,7 +19,11 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
         <div className='col-4'><h3 className='modal-letter flaversFont'>{letter[index]}</h3></div>
         <button 
           className={classes.CloseBtn}
-          onClick={() => setModal(false)}
+          onClick={() => {
+            setModal(false);
+            document.querySelector('audio').pause();
+
+          }}
         >
           &times;
         </button>

@@ -2,10 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
 
 body {
   background: url(../public/Imgs/maxresdefault.jpg) no-repeat center top;
   background-size: cover;
+  position: relative;
 }
 
 .flaversFont {
@@ -134,12 +152,13 @@ body {
   justify-content: space-between;
 }
 .ModalDiv-div {
-  height: 340px;
+  /* height: 340px; */
   margin-bottom: 0;
   padding-bottom: 0;
 }
 .ModalDiv-div img {
   height: 270px;
+  max-width: 270px;
 }
 .row {
   padding-bottom: 0;
@@ -152,7 +171,10 @@ body {
 .modalParagText {
   font-size: 18px;
   margin-top: 0;
-  color: brown;
+  color: rgb(255, 165, 62);
+}
+.modalParagText strong {
+  color: rgb(219, 142, 0)
 }
 .modal-letter {
   font-size: 40px;

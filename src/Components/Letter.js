@@ -12,7 +12,6 @@ const Letter = ({letter, setModal, changedIndex}) => {
               onClick={() => {
                 changedIndex(index);
                 setModal(true);
-                
               }}
             >
               {element}

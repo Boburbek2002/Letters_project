@@ -36,10 +36,11 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
               <h3 className='mt-1'>{letterApi[index].imgName1}</h3>
               <h3 className='mt-1 flaversFont'>{letterApi[index].imgName1}</h3>
             </div>
+            
           </div>
           <div className='col-sm-6 col-6 border-start ModalDiv-div'>
             
-            <img src={letterApi[index].url2} alt={[letterApi[index].imgName2, 'rasmi'].join(' ')} className='w-100 modalImg' />
+            <img src={letterApi[index].url2} alt={[letterApi[index].imgName2, 'rasmi'].join(' ')} className='w-100 m-auto modalImg' />
             <div className='d-flex justify-content-between flex-wrap'>
               <h3 className='mt-1'>{letterApi[index].imgName2}</h3>
               <h3 className='mt-1 flaversFont'>{letterApi[index].imgName2}</h3>
@@ -48,10 +49,19 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
           </div>
           <div className='col-md-12 modalParag'>
             <p className='modalParagText'>
-              {letterApi[index].text}
+              <strong>{letterApi[index].imgName1}</strong> - {letterApi[index].text1}
             </p>
             <audio controls className='w-50'>
-              <source src={letterApi[index].audioUrl} type="audio/mpeg" />
+              <source src={letterApi[index].audioUrl1} type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div className='col-md-12 modalParag'>
+            <p className='modalParagText'>
+              <strong>{letterApi[index].imgName2}</strong> - {letterApi[index].text2}
+            </p>
+            <audio controls className='w-50'>
+              <source src={letterApi[index].audioUrl1} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>

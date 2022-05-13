@@ -1,5 +1,5 @@
 .MyModal {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -11,12 +11,13 @@
 .ModalDiv {
   padding: 20px;
   padding-top: 0;
-  width: 500px;
+  width: 700px;
   min-height: 400px;
-  height: 600px;
+  max-height: 100vh;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 0 25px #000000d1;
+  overflow-y: scroll;
 }
 .MyModal.active {
   display: flex;
@@ -36,23 +37,37 @@
 
 @media screen and (max-width: 1024px) {
   .ModalDiv {
+    overflow-y: scroll;
+    width: 500px;
     padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .MyModal {
+    background: #000000dc;
+  }
+  .ModalDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
   }
 }
 
 @media screen and (max-width: 460px) {
   .ModalDiv {
-    width: 100vh;
-    min-height: 400px;
-    height: 80vh;
+    width: 100vw;
+    min-height: 80vh;
     border-radius: 15px;
   }
 }
 
 @media screen and (max-width: 376px) {
   .ModalDiv {
-    width: 100vh;
-    min-height: 400px;
-    height: 90vh;
+    width: 100vw;
+    overflow-y: scroll;
+    min-height: 100vh;
   }
 }

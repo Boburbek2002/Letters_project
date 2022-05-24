@@ -11,6 +11,8 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
     modalClasses.push(classes.active)
   }
 
+  console.log(index, letterApi[index])
+
   return (
     <div className={modalClasses.join(' ')}>
       <div className={classes.ModalDiv}>
@@ -22,7 +24,6 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
           onClick={() => {
             setModal(false);
             document.querySelector('audio').pause();
-
           }}
         >
           &times;
@@ -52,7 +53,7 @@ const MyModal = ({modal, setModal, index, letterApi, letter}) => {
               <strong>{letterApi[index].imgName1}</strong> - {letterApi[index].text1}
             </p>
             <audio controls className='w-50'>
-              <source src={letterApi[index].audioUrl1} type="audio/mpeg" />
+              <source src="Audios/BORI.m4a" type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>

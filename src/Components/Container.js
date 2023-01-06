@@ -3,39 +3,10 @@ import Letter from "./Letter";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyModal from "./MyModal";
 import { letterApi } from "./data";
+import { letters } from "./data";
 
 const Container = () => {
-  const letters = [
-    "Aa",
-    "Bb",
-    "Dd",
-    "Ee",
-    "Ff",
-    "Gg",
-    "Hh",
-    "Ii",
-    "Jj",
-    "Kk",
-    "Ll",
-    "Mm",
-    "Nn",
-    "Oo",
-    "Pp",
-    "Qq",
-    "Rr",
-    "Ss",
-    "Tt",
-    "Uu",
-    "Vv",
-    "Xx",
-    "Yy",
-    "Zz",
-    "O’o’",
-    "G’g’",
-    "Sh",
-    "Ch",
-    "Ng",
-  ];
+  
   const [modal, setModal] = useState(false);
   const [index, setIndex] = useState(0);
 
